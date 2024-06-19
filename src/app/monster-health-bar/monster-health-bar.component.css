@@ -1,0 +1,12 @@
+.HealthBar {
+    width: 100%;
+    height: 20px;
+    background-color: #ddd;
+    margin-bottom: 20px;
+}
+
+
+.HealthBarFill {
+    height: 100%;
+    background-color: green;
+}
