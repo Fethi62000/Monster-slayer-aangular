@@ -21,13 +21,26 @@ export class GameService {
   }
 
   updateHealthBars() {
+    const playerHealthBar = document.getElementById('playerHealthBar') as HTMLDivElement;
     const monsterHealthBar = document.getElementById('monsterHealthBar') as HTMLDivElement;
+    playerHealthBar.style.width = `${this.playerHealth}%`;
     monsterHealthBar.style.width = `${this.monsterHealth}%`;
+  }
+
+  monsterAttack() {
+    let monsterDamage = Math.floor(Math.random() * 15 ) + 5;
+    this.playerHealth -= monsterDamage;
+    if (this.playerHealth <= 0) {
+      this.playerHealth = 0;
+      alert("You loos!")
+      this.resetGame();
+    }
+    this.updateHealthBars();
   }
 
   attack() {
 
-    let playerDamage = Math.floor(Math.random() * 10 + 1);
+    let playerDamage = Math.floor(Math.random() * 10 ) + 1;
     this.monsterHealth -= playerDamage;
 
     if (this.monsterHealth <= 0) {
@@ -36,14 +49,16 @@ export class GameService {
       this.resetGame();
     }
     this.updateHealthBars();
+    this.monsterAttack();
+
   }
 
 
 
   SpecialAttack() {
 
-    let platerDamage = Math.floor(Math.random() * 30 + 10);
-    this.monsterHealth -= platerDamage;
+    let playerDamage = Math.floor(Math.random() * 30 )+ 10;
+    this.monsterHealth -= playerDamage;
 
     if (this.monsterHealth <= 0) {
       this.monsterHealth = 0;
@@ -52,7 +67,7 @@ export class GameService {
     }
 
     this.updateHealthBars();
-
+    this.monsterAttack();
 
   }
 
@@ -62,8 +77,12 @@ export class GameService {
     if (this.playerHealth > 100) {
       this.playerHealth = 100;
     }
-    this.updateHealthBars
+    this.updateHealthBars();
   }
 
 
 }
+
+
+
+
