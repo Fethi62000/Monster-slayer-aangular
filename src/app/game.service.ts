@@ -57,7 +57,7 @@ export class GameService {
 
   SpecialAttack() {
 
-    let playerDamage = Math.floor(Math.random() * 30 )+ 10;
+    let playerDamage = Math.floor(Math.random() * 20 )+ 10;
     this.monsterHealth -= playerDamage;
 
     if (this.monsterHealth <= 0) {
@@ -72,7 +72,7 @@ export class GameService {
   }
 
   heal() {
-    let healAmout = Math.floor(Math.random() * 20) + 10;
+    let healAmout = Math.floor(Math.random() * 10) + 1;
     this.playerHealth += healAmout;
     if (this.playerHealth > 100) {
       this.playerHealth = 100;
@@ -80,6 +80,10 @@ export class GameService {
     this.updateHealthBars();
   }
 
+  GiveUp(){
+    alert('You have give up the fight!')
+    this.resetGame();
+  }
 
 }
 

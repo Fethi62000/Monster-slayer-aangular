@@ -5,10 +5,11 @@ import { MonsterHealthBarComponent } from './monster-health-bar/monster-health-b
 import { SpecialAttackComponent } from './special-attack/special-attack.component';
 import { HealbtnComponent } from './healbtn/healbtn.component';
 import { PlayerHealthBarComponent } from './player-health-bar/player-health-bar.component';
+import { GiveUpbtnComponent } from './give-upbtn/give-upbtn.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, AttackbtnComponent, MonsterHealthBarComponent, SpecialAttackComponent, HealbtnComponent, PlayerHealthBarComponent],
+  imports: [RouterOutlet, AttackbtnComponent, MonsterHealthBarComponent, SpecialAttackComponent, HealbtnComponent, PlayerHealthBarComponent, GiveUpbtnComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
