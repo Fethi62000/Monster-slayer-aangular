@@ -11,12 +11,8 @@ import { GameService } from '../game.service';
 
 export class AttackbtnComponent {
   constructor(private gameService: GameService) { }
-  monsterHealth: number = 100;
-  updateHealthBars() {
-    const monsterHealthBar = document.getElementById('monsterHealthBar') as HTMLDivElement;
-    monsterHealthBar.style.width = `${this.monsterHealth}%`;
 
+  attack() {
+    this.gameService.attack();
   }
 }
-
-
