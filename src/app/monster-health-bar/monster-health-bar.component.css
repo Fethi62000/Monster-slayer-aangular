@@ -11,3 +11,11 @@
     background-color: green;
     border:  1px solid black;
 }
+
+.monster-info {
+    display: flex;
+}
+
+h3 {
+    margin-left: 10px;
+}

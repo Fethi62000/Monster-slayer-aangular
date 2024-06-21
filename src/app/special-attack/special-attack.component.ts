@@ -15,9 +15,4 @@ export class SpecialAttackComponent {
     specialAttack(){
       this.gameService.SpecialAttack();
     }
-
 }
-
-
-
-

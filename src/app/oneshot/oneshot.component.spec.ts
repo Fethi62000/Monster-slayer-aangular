@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { IconpictureComponent } from './iconpicture.component';
+import { OneshotComponent } from './oneshot.component';
 
-describe('IconpictureComponent', () => {
-  let component: IconpictureComponent;
-  let fixture: ComponentFixture<IconpictureComponent>;
+describe('OneshotComponent', () => {
+  let component: OneshotComponent;
+  let fixture: ComponentFixture<OneshotComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [IconpictureComponent]
+      imports: [OneshotComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(IconpictureComponent);
+    fixture = TestBed.createComponent(OneshotComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

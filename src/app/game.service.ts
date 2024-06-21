@@ -86,4 +86,19 @@ export class GameService {
     this.resetGame();
   }
 
+  oneshot(){
+    let playerDamage = Math.floor(Math.random() * 90) + 80;
+    this.monsterHealth -= playerDamage;
+
+    if(this.monsterHealth <= 0){
+      this.monsterHealth = 0;
+      alert('You win!')
+      alert('Are you one punch man???')
+      this.resetGame();
+      return;
+    }
+    this.updateHealthBars();
+    this.monsterAttack();
+
+  }
 }

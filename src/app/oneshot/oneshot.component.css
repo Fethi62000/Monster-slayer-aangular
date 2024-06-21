@@ -1,0 +1,16 @@
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: gold;
+    text-decoration: none;
+    border-radius: 16px;
+    transition: transform 0.1s ease-in-out;
+
+}
+
+.btn:hover{
+    transform: translateY(-17px);
+    box-shadow: 0 2px 4px rgb(0, 0, 0, 0.2 )
+}

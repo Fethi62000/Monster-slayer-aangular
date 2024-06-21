@@ -6,12 +6,14 @@ import { SpecialAttackComponent } from './special-attack/special-attack.componen
 import { HealbtnComponent } from './healbtn/healbtn.component';
 import { PlayerHealthBarComponent } from './player-health-bar/player-health-bar.component';
 import { GiveUpbtnComponent } from './give-upbtn/give-upbtn.component';
-import { IconpictureComponent } from './iconpicture/iconpicture.component';
+import { PictureComponent } from './picture/picture.component';
+import { OneshotComponent } from './oneshot/oneshot.component';
+
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, AttackbtnComponent, MonsterHealthBarComponent, SpecialAttackComponent, HealbtnComponent, PlayerHealthBarComponent, GiveUpbtnComponent, IconpictureComponent],
+  imports: [RouterOutlet, AttackbtnComponent, MonsterHealthBarComponent, SpecialAttackComponent, HealbtnComponent, PlayerHealthBarComponent, GiveUpbtnComponent, PictureComponent, OneshotComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
