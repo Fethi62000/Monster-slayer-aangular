@@ -6,7 +6,7 @@ button {
     background-color: gold;
     text-decoration: none;
     border-radius: 16px;
-    transition: transform 0.1s ease-in-out;
+    transition: transform 3s ease-in-out;
 
 }
 
