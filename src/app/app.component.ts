@@ -6,6 +6,7 @@ import { SpecialAttackComponent } from './special-attack/special-attack.componen
 import { HealbtnComponent } from './healbtn/healbtn.component';
 import { PlayerHealthBarComponent } from './player-health-bar/player-health-bar.component';
 import { GiveUpbtnComponent } from './give-upbtn/give-upbtn.component';
+
 @Component({
   selector: 'app-root',
   standalone: true,

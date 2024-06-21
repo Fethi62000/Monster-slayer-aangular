@@ -28,42 +28,43 @@ export class GameService {
   }
 
   monsterAttack() {
-    let monsterDamage = Math.floor(Math.random() * 15 ) + 5;
+    let monsterDamage = Math.floor(Math.random() * 15) + 5;
     this.playerHealth -= monsterDamage;
     if (this.playerHealth <= 0) {
       this.playerHealth = 0;
       alert("You loos!")
       this.resetGame();
+      return;
     }
     this.updateHealthBars();
   }
 
   attack() {
 
-    let playerDamage = Math.floor(Math.random() * 10 ) + 1;
+    let playerDamage = Math.floor(Math.random() * 10) + 1;
     this.monsterHealth -= playerDamage;
 
     if (this.monsterHealth <= 0) {
       this.monsterHealth = 0;
       alert("You Win!");
       this.resetGame();
+      return;
     }
     this.updateHealthBars();
     this.monsterAttack();
 
   }
 
-
-
   SpecialAttack() {
 
-    let playerDamage = Math.floor(Math.random() * 20 )+ 10;
+    let playerDamage = Math.floor(Math.random() * 20) + 10;
     this.monsterHealth -= playerDamage;
 
     if (this.monsterHealth <= 0) {
       this.monsterHealth = 0;
       alert("You win!");
       this.resetGame();
+      return;
     }
 
     this.updateHealthBars();
@@ -80,13 +81,9 @@ export class GameService {
     this.updateHealthBars();
   }
 
-  GiveUp(){
+  GiveUp() {
     alert('You have give up the fight!')
     this.resetGame();
   }
 
 }
-
-
-
-

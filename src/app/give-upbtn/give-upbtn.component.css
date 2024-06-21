@@ -1,7 +1,17 @@
 button {
+    color: rgb(255, 255, 255);
     padding: 10px 20px;
     margin: 10px;
     font-size: 16px;
     cursor: pointer;
-    background-color: aqua;
+    background-color: rgb(24, 26, 26);
+    text-decoration: none;
+    border-radius: 20px;
+    transition: transform 0.1s ease-in-out;
+}
+
+
+.btn:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }

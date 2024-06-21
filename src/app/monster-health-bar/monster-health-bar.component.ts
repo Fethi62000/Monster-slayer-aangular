@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { GameService } from '../game.service';
 
+
 @Component({
   selector: 'app-monster-health-bar',
   standalone: true,
@@ -16,7 +17,7 @@ export class MonsterHealthBarComponent {
   get monsterHealthValue(): number {
     return this.gameService.monsterHealthValue;
   }
-
+  
 }
 
 
