@@ -9,5 +9,9 @@ display: flex;
 }
 
 .container{
+    margin: auto;
+    
     background-color: rebeccapurple;
 }
+
+
