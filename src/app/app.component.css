@@ -10,8 +10,5 @@ display: flex;
 
 .container{
     margin: auto;
-    
-    background-color: rebeccapurple;
+    background-color: rgb(117, 43, 187);
 }
-
-

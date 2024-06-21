@@ -9,4 +9,5 @@
 .HealthBarFill {
     height: 100%;
     background-color: green;
+    border:  1px solid black;
 }
