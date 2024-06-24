@@ -16,4 +16,6 @@ export class AttackbtnComponent {
   attack() {
     this.gameService.attack();
   }
+
+  attackIconPatch = 'src/assets/attack.png'
 }

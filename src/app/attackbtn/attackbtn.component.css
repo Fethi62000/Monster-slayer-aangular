@@ -3,14 +3,13 @@ button {
     margin: 10px;
     font-size: 16px;
     cursor: pointer;
-    background-color: aqua;
     text-decoration: none;
     border-radius: 16px;
     transition: transform 0.1s ease-in-out;
 
 }
 
-.btnnn:hover{
+.btnnn:hover {
     transform: translateY(+7px);
-    box-shadow: 0 2px 4px rgb(0, 0, 0, 0.2 )
+    box-shadow: 0 2px 4px rgb(0, 0, 0, 0.2)
 }
